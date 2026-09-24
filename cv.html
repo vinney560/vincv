@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vincent Kipngetich | CV</title>
+    <title>Vincent Kipngetich · personal website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -11,295 +12,196 @@
 </head>
 
 <body>
-    <div class="page">
+    <div class="site-wrapper">
+        <nav class="nav-menu">
+            <a href="#home" class="active" data-page="home">Home</a>
+            <a href="#experience" data-page="experience">Personal experience</a>
+            <a href="#contacts" data-page="contacts">Contacts</a>
+            <a href="#hobbies" data-page="hobbies">Hobbies</a>
+        </nav>
 
-        <aside class="left-side">
-            <div class="photo">
-                <img src="static/photo.jpg" alt="Vincent Kipngetich">
+        <div class="content" id="pageContent">
+            <div id="homePage" class="page-section">
+                <div class="home-photo-block">
+                    <img src="static/photo.jpg" alt="VK portrait"
+                        onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22140%22 height=%22140%22 viewBox=%220 0 140 140%22%3E%3Ccircle cx=%2270%22 cy=%2270%22 r=%2268%22 fill=%22%23111%22 stroke=%22%23444%22 stroke-width=%222%22/%3E%3Ctext x=%2270%22 y=%2285%22 font-family=%22Poppins,sans-serif%22 font-size=%2242%22 fill=%22%23aaa%22 text-anchor=%22middle%22%3EVK%3C/text%3E%3C/svg%3E'">
+                </div>
+                <hr>
+
+                <div class="home-text">
+                    <p><strong>Vincent Kipngetich</strong> — Bachelor of Science in Information Technology, currently in
+                        my second year at a Kisii University. I'm a backend engineer with four years of hands-on
+                        experience, and I also build frontend interfaces (about five months into serious frontend work).
+                    </p>
+                    <p>I offer <span class="highlight">backend development</span>, API design, database architecture,
+                        automation, and networking solutions. I've shipped 12+ production projects for real users — from
+                        e‑commerce and streaming platforms to captive portals and database tools.</p>
+                    <p>My background is grounded in both formal education and self‑taught engineering. I studied at
+                        Ubora Boys High School (KCSE A‑) and Londiani Primary School. I enjoy solving practical
+                        problems, whether it's a backend pipline design or API profiling.</p>
+                    <p>After my course, I hope to deepen my expertise in distributed systems and contribute to
+                        large‑scale backend infrastructure — while continuing to build tools that make everyday tasks
+                        easier. I'm also passionate about mentoring upcoming developers in my community.</p>
+                </div>
+                <hr>
             </div>
 
-            <div class="name">Vincent Kipngetich</div>
-            <div class="role">Backend Engineer</div>
-
-            <div class="separator"></div>
-
-            <div class="contact">
-                <div class="email">
-                    <span>Email</span>
-                    vincentkipngetich479@gmail.com
-                </div>
-                <div class="phone">
-                    <span>Phone</span>
-                    +254 740 694 312
-                </div>
+            <div id="experiencePage" class="page-section" style="display: none;">
+                <h2 class="section-title">Personal Experience</h2>
+                <table class="cv-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Institutions attended</th>
+                            <th>Award given</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2025 – present</td>
+                            <td>University (BSc. Information Technology)</td>
+                            <td>In progress — expected 2028</td>
+                        </tr>
+                        <tr>
+                            <td>2021 – 2024</td>
+                            <td>Ubora Boys High School</td>
+                            <td>KCSE A‑ (minus)</td>
+                        </tr>
+                        <tr>
+                            <td>2012 – 2021</td>
+                            <td>Londiani Primary School</td>
+                            <td>KCPE 316 marks</td>
+                        </tr>
+                        <tr>
+                            <td>2023 – present</td>
+                            <td>Self‑taught / Online engineering</td>
+                            <td>12+ production projects</td>
+                        </tr>
+                        <tr>
+                            <td>2024 – 2025</td>
+                            <td>Amazon Mechanical Turk (remote)</td>
+                            <td>Data annotation & quality (9+ months)</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="experience-note">Additional skills: Django, FastAPI, Flask, Python, C, R, JavaScript, SQL,
+                    networking (hotspot, captive portal).</p>
             </div>
 
-            <div class="separator"></div>
-
-            <div class="skills">
-                <div class="skill-group">
-                    <h3 class="skill-heading">Programming Skills</h3>
-                    <div class="skill-list">
-                        <span class="skill">Python</span>
-                        <span class="skill">C</span>
-                        <span class="skill">R</span>
-                        <span class="skill">JavaScript</span>
-                        <span class="skill">HTML</span>
-                        <span class="skill">CSS</span>
+            <div id="contactsPage" class="page-section" style="display: none;">
+                <h2 class="section-title">Contacts</h2>
+                <div class="contact-card">
+                    <div class="contact-item">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value"><a
+                                href="mailto:vincentkipngetich479@gmail.com">vincentkipngetich479@gmail.com</a></span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Phone</span>
+                        <span class="contact-value">
+                            <a href="tel:0740694312">
+                                +254 740 694 312
+                            </a>
+                        </span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Location</span>
+                        <span class="contact-value">Njoro, Nakuru, Kenya</span>
+                    </div>
+                    <div class="contact-item">
+                        <span class="contact-label">Web</span>
+                        <span class="contact-value"><a href="https://lyxnexus.de5.net"
+                                target="_blank">LyxNexus</a> Hub</span>
                     </div>
                 </div>
 
-                <div class="skill-group">
-                    <h3 class="skill-heading">Frameworks</h3>
-                    <div class="skill-list">
-                        <span class="skill">Django</span>
-                        <span class="skill">FastAPI</span>
-                        <span class="skill">Flask</span>
-                    </div>
-                </div>
+                <a href="mailto:vincentkipngetich479@gmail.com"
+                    class="email-btn">
+                    Email Me
+                </a>
 
-                <div class="skill-group">
-                    <h3 class="skill-heading">Focus</h3>
-                    <div class="skill-list">
-                        <span class="skill">APIs</span>
-                        <span class="skill">Databases</span>
-                        <span class="skill">Automation</span>
-                        <span class="skill">Networking</span>
+                <hr class="contact-hr">
+                <p class="contact-note">Feel free to reach out...</p>
+            </div>
+
+            <div id="hobbiesPage" class="page-section" style="display: none;">
+                <h2 class="section-title">Hobbies & interests</h2>
+                <div class="hobby-list">
+                    <div class="hobby-item">
+                        <strong>Networking & hardware</strong>
+                        Building custom hotspots, captive portals and load balancers — always experimenting with new
+                        ways to stay connected.
+                    </div>
+                    <div class="hobby-item">
+                        <strong>Data & automation</strong>
+                        I enjoy writing scripts that clean messy data and automate many stuff. R and Python are my
+                        go‑to.
+                    </div>
+                    <div class="hobby-item">
+                        <strong>eFootball & gaming</strong>
+                        Big fan of Konami eFootball — I even built a hub for players to organise tournaments (LyMaK).
+                    </div>
+                    <div class="hobby-item">
+                        <strong>Open source & mentoring</strong>
+                        Contributing to small tools and helping junior devs understand backend fundamentals.
+                    </div>
+                    <div class="hobby-item">
+                        <strong>Music & podcasts</strong>
+                        Lo‑fi and tech podcasts keep me company during long coding sessions.
                     </div>
                 </div>
             </div>
-
-            <div class="separator"></div>
-
-            <div class="languages">
-                <h3 class="skill-heading">Languages</h3>
-                <div class="language">
-                    <span class="language-name">English</span>
-                    <span class="language-level">Fluent</span>
-                </div>
-                <div class="language">
-                    <span class="language-name">Swahili</span>
-                    <span class="language-level">Fluent</span>
-                </div>
-            </div>
-
-            <div class="separator"></div>
-
-            <div class="extra">
-                <span>Location</span>
-                Njoro, Nakuru
-            </div>
-            <div class="extra">
-                <span>Marital Status</span>
-                Taken
-            </div>
-        </aside>
-
-        <main class="main">
-
-            <section class="section">
-                <h2 class="section-title">Profile</h2>
-                <p class="section-body">
-                    I build backends. Four years in now, most of that time spent on Django,
-                    FastAPI, and Flask: APIs, databases, automation, and the networking
-                    layer underneath. I've shipped 12+ projects that people actually use,
-                    and I'm currently picking up frontend properly (about 5 months in).
-                    I like systems that stay up, secure and code I can read nine months later.
-                </p>
-            </section>
-
-            <div class="separator"></div>
-
-            <section class="section">
-                <h2 class="section-title">Selected Projects</h2>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">LyxNexus</h3>
-                        <a class="entry-link" href="https://lyxnexus.de5.net" target="_blank" rel="noopener">Visit</a>
-                        <span class="entry-meta">Django • Flask</span>
-                    </div>
-                    <p class="section-body">
-                        A class hub that keeps everything in one place — announcements,
-                        assignments, topics, and class discussions.
-                    </p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">LyxMab</h3>
-                        <a class="entry-link" href="https://lyxmab.de5.net" target="_blank" rel="noopener">Visit</a>
-                        <span class="entry-meta">Django • FastAPI</span>
-                    </div>
-                    <p class="section-body">
-                        A software studio project: building tools that make everyday
-                        tasks easier for users.
-                    </p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">LyMaK</h3>
-                        <a class="entry-link" href="https://lymak.vercel.app/" target="_blank" rel="noopener">Visit</a>
-                        <span class="entry-meta">Django</span>
-                    </div>
-                    <p class="section-body">
-                        An eFootball hub where Konami players meet, organise, and run
-                        tournaments.
-                    </p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">T-Give</h3>
-                        <a class="entry-link" href="https://t-give-3.onrender.com" target="_blank" rel="noopener">Visit</a>
-                        <span class="entry-meta">Django</span>
-                    </div>
-                    <p class="section-body">
-                        An e-commerce platform for supermarkets — same as Amazon or Jumia,
-                        built around online supermarket, carts, and orders.
-                    </p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">ViewTV & Royale TV</h3>
-                        <a class="entry-link" href="https://viewstream-1.onrender.com/" target="_blank" rel="noopener">Visit</a>
-                        <span class="entry-meta">Django • FastAPI</span>
-                    </div>
-                    <p class="section-body">
-                        Streaming platforms for live news and a broad watchlist of
-                        categories.
-                    </p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">LyxCSV Analysis</h3>
-                        <a class="entry-link" href="https://lyxcsv.vercel.app/" target="_blank" rel="noopener">Visit</a>
-                        <span class="entry-meta">Python • R</span>
-                    </div>
-                    <p class="section-body">
-                        CSV ingestion and analysis pipeline for structured & Unstructured data
-                        processing and reporting. It can also clean unclean data at command.
-                    </p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">WiFi Hotspot</h3>
-                        <span class="entry-meta">Networking</span>
-                    </div>
-                    <p class="section-body">
-                        A smart hotspot that bypasses the usual restrictions on
-                        hotspotting, with its own internal load balancer so it holds
-                        up as users scale.
-                    </p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">LyxCaptive Portal</h3>
-                        <span class="entry-meta">Networking</span>
-                    </div>
-                    <p class="section-body">
-                        A pay-and-use captive portal for WiFi — users buy time and get
-                        access for a limited window.
-                    </p>
-                </div>
-            </section>
-
-            <div class="separator"></div>
-
-            <section class="section">
-                <h2 class="section-title">Tooling & Scripts</h2>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">Production-Grade Database Cloner</h3>
-                        <span class="entry-meta">Python • SQL</span>
-                    </div>
-                    <p class="section-body">
-                        Clones databases safely across environments; reliable enough
-                        to run against production.
-                    </p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">Universal Database Reader</h3>
-                        <span class="entry-meta">Python • SQL</span>
-                    </div>
-                    <p class="section-body">
-                        Reads from any database type and makes well-structured table of the data in it. For No-SQL dbs, it displays in a irregular table.
-                    </p>
-                </div>
-            </section>
-
-            <div class="separator"></div>
-
-            <section class="section">
-                <h2 class="section-title">Experience</h2>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">Backend Engineer</h3>
-                        <span class="entry-meta">4 years</span>
-                    </div>
-                    <p class="section-body">
-                        Designed and shipped 12+ production projects across
-                        e-commerce, streaming, networking, and data tooling.
-                        Owned everything from schema to deployment.
-                    </p>
-                </div>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">Amazon Mechanical Turk Worker</h3>
-                        <span class="entry-meta">9+ months</span>
-                    </div>
-                    <p class="section-body">
-                        Data annotation, categorisation, aggregation, and quality checks at high
-                        throughput using C scripts.
-                    </p>
-                </div>
-            </section>
-
-            <div class="separator"></div>
-
-            <section class="section">
-                <h2 class="section-title">Education</h2>
-
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">BSc. Information Technology</h3>
-                        <span class="entry-meta">In progress</span>
-                    </div>
-                    <p class="section-body">
-                        Joined Aug 2025, now in year two.
-                    </p>
-                </div>
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">KCSE</h3>
-                        <span class="entry-meta">2021-2024</span>
-                    </div>
-                    <p class="section-body">
-                        Certificate of Secondary Education at Ubora Boys High School, attained a min grade of A- (minus)
-                    </p>
-                </div>
-                <div class="entry">
-                    <div class="entry-head">
-                        <h3 class="entry-title">KCPE</h3>
-                        <span class="entry-meta">2012-2021</span>
-                    </div>
-                    <p class="section-body">
-                        Certificate of Primary Education at Londiani Primary School, attained 316 marks
-                    </p>
-                </div>
-            </section>
-
-        </main>
+        </div>
     </div>
+
+    <script>
+        (function () {
+            const pages = {
+                home: document.getElementById('homePage'),
+                experience: document.getElementById('experiencePage'),
+                contacts: document.getElementById('contactsPage'),
+                hobbies: document.getElementById('hobbiesPage')
+            };
+
+            const navLinks = document.querySelectorAll('.nav-menu a');
+
+            function showPage(pageId) {
+                Object.values(pages).forEach(p => {
+                    if (p) p.style.display = 'none';
+                });
+                if (pages[pageId]) {
+                    pages[pageId].style.display = 'block';
+                }
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.dataset.page === pageId) {
+                        link.classList.add('active');
+                    }
+                });
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const page = this.dataset.page;
+                    if (page && pages[page]) {
+                        showPage(page);
+                    }
+                });
+            });
+
+            Object.keys(pages).forEach(key => {
+                if (key !== 'home' && pages[key]) {
+                    pages[key].style.display = 'none';
+                }
+            });
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.dataset.page === 'home') link.classList.add('active');
+            });
+        })();
+    </script>
 </body>
+
 </html>
